@@ -25,5 +25,5 @@ RUN unzip terraform_${TERRAFORM_VER}_linux_amd64.zip
 RUN ls -al
 
 WORKDIR /app
-
+LABEL quay.io=1
 ENTRYPOINT ["terraform"]
